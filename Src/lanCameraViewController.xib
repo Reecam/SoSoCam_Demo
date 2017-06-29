@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="lanCameraViewController">
+            <connections>
+                <outlet property="tablevViewLanCameraList" destination="uRe-4d-Mkk" id="gdU-GJ-xIb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uRe-4d-Mkk">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="SQP-eF-WAm"/>
+                    </constraints>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="SQP-eF-WAm"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="pdQ-Bc-6Bz"/>
+                        <outlet property="delegate" destination="-1" id="6AV-pL-jN5"/>
+                    </connections>
+                </tableView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TWc-Pr-VQC">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <mutableString key="text">/*
+ *局域网搜索，就是[[IPCamMgr get_share]start];
+ *获取局域网摄像机，通过[[IPCamMgr get_share]get_discovered_cameras_list];
+ *建议按照以下方法操作:
+ *applicationDidBecomeActive中就开始局域网搜索，这个搜索会一直在后台运行
+ *需要获取局域网摄像机，再通过[[IPCamMgr get_share]get_discovered_cameras_list]
+ *如果start后想要立刻get_discovered_cameras_list必须注意以下两点
+ *start后需要延时几秒钟才能去get_discovered_cameras_list
+ *延时需要异步
+ */</mutableString>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="TWc-Pr-VQC" secondAttribute="trailing" id="80V-1y-bxZ"/>
+                <constraint firstAttribute="trailing" secondItem="uRe-4d-Mkk" secondAttribute="trailing" constant="10" id="9dl-Lp-nPS"/>
+                <constraint firstItem="uRe-4d-Mkk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="KsK-QJ-aYP"/>
+                <constraint firstItem="TWc-Pr-VQC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Viw-LG-Oue"/>
+                <constraint firstAttribute="bottom" secondItem="TWc-Pr-VQC" secondAttribute="bottom" id="dqd-Eh-WNt"/>
+                <constraint firstItem="uRe-4d-Mkk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="pNW-7L-IP4"/>
+                <constraint firstItem="TWc-Pr-VQC" firstAttribute="top" secondItem="uRe-4d-Mkk" secondAttribute="bottom" id="pTz-EJ-Hvm"/>
+            </constraints>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="uRe-4d-Mkk"/>
+                    <include reference="TWc-Pr-VQC"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="9dl-Lp-nPS"/>
+                    <include reference="KsK-QJ-aYP"/>
+                    <include reference="pNW-7L-IP4"/>
+                    <include reference="80V-1y-bxZ"/>
+                    <include reference="Viw-LG-Oue"/>
+                    <include reference="dqd-Eh-WNt"/>
+                    <include reference="pTz-EJ-Hvm"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

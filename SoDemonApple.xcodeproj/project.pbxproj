@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		740BD6231CE22C3500E16761 /* AddCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 740BD61A1CE22C3500E16761 /* AddCameraViewController.m */; };
+		740BD6271CE22C3500E16761 /* LiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 740BD6211CE22C3500E16761 /* LiveViewController.m */; };
+		740BD6311CE22E8700E16761 /* CameraListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 740BD6301CE22E8700E16761 /* CameraListViewController.m */; };
+		740BD63D1CE2309300E16761 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 740BD6341CE2309300E16761 /* Info.plist */; };
+		740BD63E1CE2309300E16761 /* loading_step0.png in Resources */ = {isa = PBXBuildFile; fileRef = 740BD6351CE2309300E16761 /* loading_step0.png */; };
+		740BD63F1CE2309300E16761 /* loading_step1.png in Resources */ = {isa = PBXBuildFile; fileRef = 740BD6361CE2309300E16761 /* loading_step1.png */; };
+		740BD6401CE2309300E16761 /* loading_step2.png in Resources */ = {isa = PBXBuildFile; fileRef = 740BD6371CE2309300E16761 /* loading_step2.png */; };
+		740BD6411CE2309300E16761 /* start_play.png in Resources */ = {isa = PBXBuildFile; fileRef = 740BD6381CE2309300E16761 /* start_play.png */; };
+		740BD6421CE2309300E16761 /* verify_code.html in Resources */ = {isa = PBXBuildFile; fileRef = 740BD6391CE2309300E16761 /* verify_code.html */; };
+		740BD64A1CE2318D00E16761 /* CameraListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 740BD6481CE2318D00E16761 /* CameraListTableViewCell.m */; };
+		98532F111CE3752D00CBA064 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 98532F101CE3752D00CBA064 /* libc++.tbd */; };
+		98532F131CE3753500CBA064 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98532F121CE3753500CBA064 /* AudioToolbox.framework */; };
+		98532F151CE3753D00CBA064 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98532F141CE3753D00CBA064 /* AVFoundation.framework */; };
+		98532F171CE3754600CBA064 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98532F161CE3754600CBA064 /* CoreMedia.framework */; };
+		98532F191CE3754F00CBA064 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98532F181CE3754F00CBA064 /* MediaPlayer.framework */; };
+		98532F1B1CE3755F00CBA064 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98532F1A1CE3755F00CBA064 /* SystemConfiguration.framework */; };
+		98532F1D1CE3756900CBA064 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98532F1C1CE3756900CBA064 /* CoreFoundation.framework */; };
+		98532F201CE3769D00CBA064 /* AddCameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98532F1E1CE3769D00CBA064 /* AddCameraViewController.xib */; };
+		98532F231CE376AB00CBA064 /* CameraListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98532F211CE376AB00CBA064 /* CameraListTableViewCell.xib */; };
+		98532F261CE376C700CBA064 /* LiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98532F241CE376C700CBA064 /* LiveViewController.xib */; };
+		98532F411CE4C7C600CBA064 /* line_gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 98532F371CE4C7C600CBA064 /* line_gray.png */; };
+		98532F421CE4C7C600CBA064 /* mic_start.png in Resources */ = {isa = PBXBuildFile; fileRef = 98532F381CE4C7C600CBA064 /* mic_start.png */; };
+		98532F431CE4C7C600CBA064 /* mic_stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 98532F391CE4C7C600CBA064 /* mic_stop.png */; };
+		98532F441CE4C7C600CBA064 /* play_change_screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 98532F3A1CE4C7C600CBA064 /* play_change_screen.png */; };
+		98532F451CE4C7C600CBA064 /* play_change_screen2.png in Resources */ = {isa = PBXBuildFile; fileRef = 98532F3B1CE4C7C600CBA064 /* play_change_screen2.png */; };
+		98532F461CE4C7C600CBA064 /* record_start.png in Resources */ = {isa = PBXBuildFile; fileRef = 98532F3C1CE4C7C600CBA064 /* record_start.png */; };
+		98532F471CE4C7C600CBA064 /* record_stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 98532F3D1CE4C7C600CBA064 /* record_stop.png */; };
+		98532F481CE4C7C600CBA064 /* snapshot_unselect.png in Resources */ = {isa = PBXBuildFile; fileRef = 98532F3E1CE4C7C600CBA064 /* snapshot_unselect.png */; };
+		98532F4A1CE4C7C600CBA064 /* speak_stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 98532F401CE4C7C600CBA064 /* speak_stop.png */; };
+		98532F4C1CE4C81600CBA064 /* speak_start.png in Resources */ = {isa = PBXBuildFile; fileRef = 98532F4B1CE4C81600CBA064 /* speak_start.png */; };
+		9865123D1CE5F7FE007D8F92 /* lanCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9865123B1CE5F7FE007D8F92 /* lanCameraViewController.m */; };
+		9865123E1CE5F7FE007D8F92 /* lanCameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9865123C1CE5F7FE007D8F92 /* lanCameraViewController.xib */; };
+		986512421CE5F829007D8F92 /* lanCameraTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 986512401CE5F829007D8F92 /* lanCameraTableViewCell.m */; };
+		986512431CE5F829007D8F92 /* lanCameraTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 986512411CE5F829007D8F92 /* lanCameraTableViewCell.xib */; };
+		98DD7A071CE1F268004CF71B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 98DD7A061CE1F268004CF71B /* main.m */; };
+		98DD7A0A1CE1F268004CF71B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 98DD7A091CE1F268004CF71B /* AppDelegate.m */; };
+		98DD7A101CE1F268004CF71B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98DD7A0E1CE1F268004CF71B /* Main.storyboard */; };
+		98DD7A121CE1F268004CF71B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98DD7A111CE1F268004CF71B /* Assets.xcassets */; };
+		98DD7A151CE1F268004CF71B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98DD7A131CE1F268004CF71B /* LaunchScreen.storyboard */; };
+		98E0DED61D474CB200A7AF69 /* libSoSoCamSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 98E0DED51D474CB200A7AF69 /* libSoSoCamSDK.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		740BD6441CE2309400E16761 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 740BD63A1CE2309300E16761 /* SoSoCamSDKBundle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B4A648E1AFCB4BA006C5EEF;
+			remoteInfo = SoSoCamSDKBundle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		740BD6191CE22C3500E16761 /* AddCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddCameraViewController.h; path = ../Src/AddCameraViewController.h; sourceTree = "<group>"; };
+		740BD61A1CE22C3500E16761 /* AddCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddCameraViewController.m; path = ../Src/AddCameraViewController.m; sourceTree = "<group>"; };
+		740BD6201CE22C3500E16761 /* LiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveViewController.h; sourceTree = "<group>"; };
+		740BD6211CE22C3500E16761 /* LiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveViewController.m; sourceTree = "<group>"; };
+		740BD62F1CE22E8700E16761 /* CameraListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CameraListViewController.h; path = ../Src/CameraListViewController.h; sourceTree = "<group>"; };
+		740BD6301CE22E8700E16761 /* CameraListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CameraListViewController.m; path = ../Src/CameraListViewController.m; sourceTree = "<group>"; };
+		740BD6341CE2309300E16761 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		740BD6351CE2309300E16761 /* loading_step0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading_step0.png; sourceTree = "<group>"; };
+		740BD6361CE2309300E16761 /* loading_step1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading_step1.png; sourceTree = "<group>"; };
+		740BD6371CE2309300E16761 /* loading_step2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading_step2.png; sourceTree = "<group>"; };
+		740BD6381CE2309300E16761 /* start_play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start_play.png; sourceTree = "<group>"; };
+		740BD6391CE2309300E16761 /* verify_code.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = verify_code.html; sourceTree = "<group>"; };
+		740BD63A1CE2309300E16761 /* SoSoCamSDKBundle.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = SoSoCamSDKBundle.xcodeproj; sourceTree = "<group>"; };
+		740BD6471CE2318D00E16761 /* CameraListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CameraListTableViewCell.h; path = Src/CameraListTableViewCell.h; sourceTree = SOURCE_ROOT; };
+		740BD6481CE2318D00E16761 /* CameraListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CameraListTableViewCell.m; path = Src/CameraListTableViewCell.m; sourceTree = SOURCE_ROOT; };
+		98532F101CE3752D00CBA064 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		98532F121CE3753500CBA064 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		98532F141CE3753D00CBA064 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		98532F161CE3754600CBA064 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		98532F181CE3754F00CBA064 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		98532F1A1CE3755F00CBA064 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		98532F1C1CE3756900CBA064 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		98532F1F1CE3769D00CBA064 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = SoDemonApple/Base.lproj/AddCameraViewController.xib; sourceTree = SOURCE_ROOT; };
+		98532F221CE376AB00CBA064 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = SoDemonApple/Base.lproj/CameraListTableViewCell.xib; sourceTree = SOURCE_ROOT; };
+		98532F251CE376C700CBA064 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = SoDemonApple/Base.lproj/LiveViewController.xib; sourceTree = SOURCE_ROOT; };
+		98532F371CE4C7C600CBA064 /* line_gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line_gray.png; sourceTree = "<group>"; };
+		98532F381CE4C7C600CBA064 /* mic_start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mic_start.png; sourceTree = "<group>"; };
+		98532F391CE4C7C600CBA064 /* mic_stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mic_stop.png; sourceTree = "<group>"; };
+		98532F3A1CE4C7C600CBA064 /* play_change_screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play_change_screen.png; sourceTree = "<group>"; };
+		98532F3B1CE4C7C600CBA064 /* play_change_screen2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play_change_screen2.png; sourceTree = "<group>"; };
+		98532F3C1CE4C7C600CBA064 /* record_start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = record_start.png; sourceTree = "<group>"; };
+		98532F3D1CE4C7C600CBA064 /* record_stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = record_stop.png; sourceTree = "<group>"; };
+		98532F3E1CE4C7C600CBA064 /* snapshot_unselect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snapshot_unselect.png; sourceTree = "<group>"; };
+		98532F401CE4C7C600CBA064 /* speak_stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speak_stop.png; sourceTree = "<group>"; };
+		98532F4B1CE4C81600CBA064 /* speak_start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speak_start.png; sourceTree = "<group>"; };
+		9865123A1CE5F7FE007D8F92 /* lanCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lanCameraViewController.h; path = Src/lanCameraViewController.h; sourceTree = SOURCE_ROOT; };
+		9865123B1CE5F7FE007D8F92 /* lanCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = lanCameraViewController.m; path = Src/lanCameraViewController.m; sourceTree = SOURCE_ROOT; };
+		9865123C1CE5F7FE007D8F92 /* lanCameraViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = lanCameraViewController.xib; path = Src/lanCameraViewController.xib; sourceTree = SOURCE_ROOT; };
+		9865123F1CE5F829007D8F92 /* lanCameraTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lanCameraTableViewCell.h; path = Src/lanCameraTableViewCell.h; sourceTree = SOURCE_ROOT; };
+		986512401CE5F829007D8F92 /* lanCameraTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = lanCameraTableViewCell.m; path = Src/lanCameraTableViewCell.m; sourceTree = SOURCE_ROOT; };
+		986512411CE5F829007D8F92 /* lanCameraTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = lanCameraTableViewCell.xib; path = Src/lanCameraTableViewCell.xib; sourceTree = SOURCE_ROOT; };
+		98DD7A021CE1F268004CF71B /* SoDemonApple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoDemonApple.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		98DD7A061CE1F268004CF71B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		98DD7A081CE1F268004CF71B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		98DD7A091CE1F268004CF71B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		98DD7A0F1CE1F268004CF71B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		98DD7A111CE1F268004CF71B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		98DD7A141CE1F268004CF71B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		98DD7A161CE1F268004CF71B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98E0DED51D474CB200A7AF69 /* libSoSoCamSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSoSoCamSDK.a; sourceTree = "<group>"; };
+		98E0DED91D474EB000A7AF69 /* IPCam.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IPCam.h; sourceTree = "<group>"; };
+		98E0DEDA1D474EB000A7AF69 /* IPCamMgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IPCamMgr.h; sourceTree = "<group>"; };
+		98E0DEDB1D474EB000A7AF69 /* IPCamVideoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IPCamVideoView.h; sourceTree = "<group>"; };
+		98E0DEDC1D474EB000A7AF69 /* SoundWaveWifiSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SoundWaveWifiSetting.h; sourceTree = "<group>"; };
+		98E0DEDD1D474EB000A7AF69 /* Storage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Storage.h; sourceTree = "<group>"; };
+		98E0DEDE1D474EB000A7AF69 /* Util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
+		98E0DEDF1D474EB000A7AF69 /* WebService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebService.h; sourceTree = "<group>"; };
+		98E0DEE01D474EB000A7AF69 /* WiFiMatching.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WiFiMatching.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		98DD79FF1CE1F268004CF71B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98532F1D1CE3756900CBA064 /* CoreFoundation.framework in Frameworks */,
+				98532F1B1CE3755F00CBA064 /* SystemConfiguration.framework in Frameworks */,
+				98532F191CE3754F00CBA064 /* MediaPlayer.framework in Frameworks */,
+				98532F171CE3754600CBA064 /* CoreMedia.framework in Frameworks */,
+				98E0DED61D474CB200A7AF69 /* libSoSoCamSDK.a in Frameworks */,
+				98532F151CE3753D00CBA064 /* AVFoundation.framework in Frameworks */,
+				98532F131CE3753500CBA064 /* AudioToolbox.framework in Frameworks */,
+				98532F111CE3752D00CBA064 /* libc++.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		740BD6181CE22C3500E16761 /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				98E0DED51D474CB200A7AF69 /* libSoSoCamSDK.a */,
+				986512381CE5F716007D8F92 /* LanSearch */,
+				98532F361CE4C7C600CBA064 /* images */,
+				740BD62B1CE22C6900E16761 /* LiveVideo */,
+				740BD62A1CE22C5200E16761 /* AddCamera */,
+				740BD6291CE22C3E00E16761 /* CameraList */,
+			);
+			path = Src;
+			sourceTree = SOURCE_ROOT;
+		};
+		740BD6291CE22C3E00E16761 /* CameraList */ = {
+			isa = PBXGroup;
+			children = (
+				740BD6471CE2318D00E16761 /* CameraListTableViewCell.h */,
+				740BD6481CE2318D00E16761 /* CameraListTableViewCell.m */,
+				98532F211CE376AB00CBA064 /* CameraListTableViewCell.xib */,
+				740BD62F1CE22E8700E16761 /* CameraListViewController.h */,
+				740BD6301CE22E8700E16761 /* CameraListViewController.m */,
+			);
+			name = CameraList;
+			path = ../images;
+			sourceTree = "<group>";
+		};
+		740BD62A1CE22C5200E16761 /* AddCamera */ = {
+			isa = PBXGroup;
+			children = (
+				740BD6191CE22C3500E16761 /* AddCameraViewController.h */,
+				740BD61A1CE22C3500E16761 /* AddCameraViewController.m */,
+				98532F1E1CE3769D00CBA064 /* AddCameraViewController.xib */,
+			);
+			name = AddCamera;
+			path = ../images;
+			sourceTree = "<group>";
+		};
+		740BD62B1CE22C6900E16761 /* LiveVideo */ = {
+			isa = PBXGroup;
+			children = (
+				740BD6201CE22C3500E16761 /* LiveViewController.h */,
+				740BD6211CE22C3500E16761 /* LiveViewController.m */,
+				98532F241CE376C700CBA064 /* LiveViewController.xib */,
+			);
+			name = LiveVideo;
+			sourceTree = "<group>";
+		};
+		740BD6321CE2309300E16761 /* SoSoCamSDKBundle */ = {
+			isa = PBXGroup;
+			children = (
+				740BD6331CE2309300E16761 /* SoSoCamSDKBundle */,
+				740BD63A1CE2309300E16761 /* SoSoCamSDKBundle.xcodeproj */,
+			);
+			name = SoSoCamSDKBundle;
+			path = libSoSoCamSDK/SoSoCamSDKBundle;
+			sourceTree = SOURCE_ROOT;
+		};
+		740BD6331CE2309300E16761 /* SoSoCamSDKBundle */ = {
+			isa = PBXGroup;
+			children = (
+				740BD6341CE2309300E16761 /* Info.plist */,
+				740BD6351CE2309300E16761 /* loading_step0.png */,
+				740BD6361CE2309300E16761 /* loading_step1.png */,
+				740BD6371CE2309300E16761 /* loading_step2.png */,
+				740BD6381CE2309300E16761 /* start_play.png */,
+				740BD6391CE2309300E16761 /* verify_code.html */,
+			);
+			path = SoSoCamSDKBundle;
+			sourceTree = "<group>";
+		};
+		740BD63B1CE2309300E16761 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				740BD6451CE2309400E16761 /* SoSoCamSDKBundle.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		98532F361CE4C7C600CBA064 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				98532F371CE4C7C600CBA064 /* line_gray.png */,
+				98532F381CE4C7C600CBA064 /* mic_start.png */,
+				98532F391CE4C7C600CBA064 /* mic_stop.png */,
+				98532F3A1CE4C7C600CBA064 /* play_change_screen.png */,
+				98532F3B1CE4C7C600CBA064 /* play_change_screen2.png */,
+				98532F3C1CE4C7C600CBA064 /* record_start.png */,
+				98532F3D1CE4C7C600CBA064 /* record_stop.png */,
+				98532F3E1CE4C7C600CBA064 /* snapshot_unselect.png */,
+				98532F4B1CE4C81600CBA064 /* speak_start.png */,
+				98532F401CE4C7C600CBA064 /* speak_stop.png */,
+			);
+			path = images;
+			sourceTree = SOURCE_ROOT;
+		};
+		986512381CE5F716007D8F92 /* LanSearch */ = {
+			isa = PBXGroup;
+			children = (
+				9865123F1CE5F829007D8F92 /* lanCameraTableViewCell.h */,
+				986512401CE5F829007D8F92 /* lanCameraTableViewCell.m */,
+				986512411CE5F829007D8F92 /* lanCameraTableViewCell.xib */,
+				9865123A1CE5F7FE007D8F92 /* lanCameraViewController.h */,
+				9865123B1CE5F7FE007D8F92 /* lanCameraViewController.m */,
+				9865123C1CE5F7FE007D8F92 /* lanCameraViewController.xib */,
+			);
+			name = LanSearch;
+			path = ../images;
+			sourceTree = "<group>";
+		};
+		98DD79F91CE1F268004CF71B = {
+			isa = PBXGroup;
+			children = (
+				98532F1C1CE3756900CBA064 /* CoreFoundation.framework */,
+				98532F1A1CE3755F00CBA064 /* SystemConfiguration.framework */,
+				98532F181CE3754F00CBA064 /* MediaPlayer.framework */,
+				98532F161CE3754600CBA064 /* CoreMedia.framework */,
+				98532F141CE3753D00CBA064 /* AVFoundation.framework */,
+				98532F121CE3753500CBA064 /* AudioToolbox.framework */,
+				98532F101CE3752D00CBA064 /* libc++.tbd */,
+				98DD7A041CE1F268004CF71B /* SoDemonApple */,
+				98DD7A031CE1F268004CF71B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		98DD7A031CE1F268004CF71B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				98DD7A021CE1F268004CF71B /* SoDemonApple.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		98DD7A041CE1F268004CF71B /* SoDemonApple */ = {
+			isa = PBXGroup;
+			children = (
+				98DD7A391CE1F3C5004CF71B /* include */,
+				740BD6321CE2309300E16761 /* SoSoCamSDKBundle */,
+				740BD6181CE22C3500E16761 /* Src */,
+				98DD7A051CE1F268004CF71B /* Supporting Files */,
+			);
+			path = SoDemonApple;
+			sourceTree = "<group>";
+		};
+		98DD7A051CE1F268004CF71B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				98DD7A161CE1F268004CF71B /* Info.plist */,
+				98DD7A081CE1F268004CF71B /* AppDelegate.h */,
+				98DD7A091CE1F268004CF71B /* AppDelegate.m */,
+				98DD7A0E1CE1F268004CF71B /* Main.storyboard */,
+				98DD7A131CE1F268004CF71B /* LaunchScreen.storyboard */,
+				98DD7A111CE1F268004CF71B /* Assets.xcassets */,
+				98DD7A061CE1F268004CF71B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		98DD7A391CE1F3C5004CF71B /* include */ = {
+			isa = PBXGroup;
+			children = (
+				98E0DED91D474EB000A7AF69 /* IPCam.h */,
+				98E0DEDA1D474EB000A7AF69 /* IPCamMgr.h */,
+				98E0DEDB1D474EB000A7AF69 /* IPCamVideoView.h */,
+				98E0DEDC1D474EB000A7AF69 /* SoundWaveWifiSetting.h */,
+				98E0DEDD1D474EB000A7AF69 /* Storage.h */,
+				98E0DEDE1D474EB000A7AF69 /* Util.h */,
+				98E0DEDF1D474EB000A7AF69 /* WebService.h */,
+				98E0DEE01D474EB000A7AF69 /* WiFiMatching.h */,
+			);
+			name = include;
+			path = libSoSoCamSDK/include;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		98DD7A011CE1F268004CF71B /* SoDemonApple */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98DD7A2F1CE1F268004CF71B /* Build configuration list for PBXNativeTarget "SoDemonApple" */;
+			buildPhases = (
+				98DD79FE1CE1F268004CF71B /* Sources */,
+				98DD79FF1CE1F268004CF71B /* Frameworks */,
+				98DD7A001CE1F268004CF71B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoDemonApple;
+			productName = SoDemonApple;
+			productReference = 98DD7A021CE1F268004CF71B /* SoDemonApple.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98DD79FA1CE1F268004CF71B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = sandy;
+				TargetAttributes = {
+					98DD7A011CE1F268004CF71B = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = T9F9D4N985;
+					};
+				};
+			};
+			buildConfigurationList = 98DD79FD1CE1F268004CF71B /* Build configuration list for PBXProject "SoDemonApple" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 98DD79F91CE1F268004CF71B;
+			productRefGroup = 98DD7A031CE1F268004CF71B /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 740BD63B1CE2309300E16761 /* Products */;
+					ProjectRef = 740BD63A1CE2309300E16761 /* SoSoCamSDKBundle.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				98DD7A011CE1F268004CF71B /* SoDemonApple */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		740BD6451CE2309400E16761 /* SoSoCamSDKBundle.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SoSoCamSDKBundle.bundle;
+			remoteRef = 740BD6441CE2309400E16761 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		98DD7A001CE1F268004CF71B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98532F471CE4C7C600CBA064 /* record_stop.png in Resources */,
+				98532F4C1CE4C81600CBA064 /* speak_start.png in Resources */,
+				986512431CE5F829007D8F92 /* lanCameraTableViewCell.xib in Resources */,
+				98532F431CE4C7C600CBA064 /* mic_stop.png in Resources */,
+				740BD6411CE2309300E16761 /* start_play.png in Resources */,
+				740BD63D1CE2309300E16761 /* Info.plist in Resources */,
+				98532F441CE4C7C600CBA064 /* play_change_screen.png in Resources */,
+				98532F421CE4C7C600CBA064 /* mic_start.png in Resources */,
+				98532F411CE4C7C600CBA064 /* line_gray.png in Resources */,
+				98532F451CE4C7C600CBA064 /* play_change_screen2.png in Resources */,
+				98532F231CE376AB00CBA064 /* CameraListTableViewCell.xib in Resources */,
+				740BD63E1CE2309300E16761 /* loading_step0.png in Resources */,
+				98532F4A1CE4C7C600CBA064 /* speak_stop.png in Resources */,
+				9865123E1CE5F7FE007D8F92 /* lanCameraViewController.xib in Resources */,
+				98532F481CE4C7C600CBA064 /* snapshot_unselect.png in Resources */,
+				740BD63F1CE2309300E16761 /* loading_step1.png in Resources */,
+				98DD7A151CE1F268004CF71B /* LaunchScreen.storyboard in Resources */,
+				740BD6401CE2309300E16761 /* loading_step2.png in Resources */,
+				740BD6421CE2309300E16761 /* verify_code.html in Resources */,
+				98532F461CE4C7C600CBA064 /* record_start.png in Resources */,
+				98DD7A121CE1F268004CF71B /* Assets.xcassets in Resources */,
+				98532F261CE376C700CBA064 /* LiveViewController.xib in Resources */,
+				98DD7A101CE1F268004CF71B /* Main.storyboard in Resources */,
+				98532F201CE3769D00CBA064 /* AddCameraViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		98DD79FE1CE1F268004CF71B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				740BD64A1CE2318D00E16761 /* CameraListTableViewCell.m in Sources */,
+				740BD6271CE22C3500E16761 /* LiveViewController.m in Sources */,
+				986512421CE5F829007D8F92 /* lanCameraTableViewCell.m in Sources */,
+				98DD7A0A1CE1F268004CF71B /* AppDelegate.m in Sources */,
+				9865123D1CE5F7FE007D8F92 /* lanCameraViewController.m in Sources */,
+				98DD7A071CE1F268004CF71B /* main.m in Sources */,
+				740BD6231CE22C3500E16761 /* AddCameraViewController.m in Sources */,
+				740BD6311CE22E8700E16761 /* CameraListViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		98532F1E1CE3769D00CBA064 /* AddCameraViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98532F1F1CE3769D00CBA064 /* Base */,
+			);
+			name = AddCameraViewController.xib;
+			sourceTree = "<group>";
+		};
+		98532F211CE376AB00CBA064 /* CameraListTableViewCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98532F221CE376AB00CBA064 /* Base */,
+			);
+			name = CameraListTableViewCell.xib;
+			sourceTree = "<group>";
+		};
+		98532F241CE376C700CBA064 /* LiveViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98532F251CE376C700CBA064 /* Base */,
+			);
+			name = LiveViewController.xib;
+			sourceTree = "<group>";
+		};
+		98DD7A0E1CE1F268004CF71B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98DD7A0F1CE1F268004CF71B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		98DD7A131CE1F268004CF71B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98DD7A141CE1F268004CF71B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		98DD7A2D1CE1F268004CF71B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		98DD7A2E1CE1F268004CF71B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		98DD7A301CE1F268004CF71B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = SoDemonApple/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libSoSoCamSDK",
+					"$(PROJECT_DIR)/Src",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.reecam.net.SoDemonApple;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		98DD7A311CE1F268004CF71B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = SoDemonApple/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libSoSoCamSDK",
+					"$(PROJECT_DIR)/Src",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.reecam.net.SoDemonApple;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		98DD79FD1CE1F268004CF71B /* Build configuration list for PBXProject "SoDemonApple" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98DD7A2D1CE1F268004CF71B /* Debug */,
+				98DD7A2E1CE1F268004CF71B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98DD7A2F1CE1F268004CF71B /* Build configuration list for PBXNativeTarget "SoDemonApple" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98DD7A301CE1F268004CF71B /* Debug */,
+				98DD7A311CE1F268004CF71B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 98DD79FA1CE1F268004CF71B /* Project object */;
+}

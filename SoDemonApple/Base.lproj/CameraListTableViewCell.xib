@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CameraListViewController"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="412" id="KGk-i7-Jjw" customClass="CameraListTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view alpha="0.80000000000000004" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0eP-5l-WLI">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="camera1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LvM-eZ-ZrI" userLabel="LabelStatus">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ID:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNQ-6f-cY6" userLabel="LabelID">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.85882352939999995" green="0.96078431369999995" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dNQ-6f-cY6" firstAttribute="leading" secondItem="0eP-5l-WLI" secondAttribute="leading" constant="20" id="0rD-RT-Rm5"/>
+                            <constraint firstAttribute="bottom" secondItem="LvM-eZ-ZrI" secondAttribute="bottom" constant="10" id="7xj-dD-tIj"/>
+                            <constraint firstItem="dNQ-6f-cY6" firstAttribute="top" secondItem="0eP-5l-WLI" secondAttribute="top" constant="10" id="ZOd-Fn-RG8"/>
+                            <constraint firstItem="LvM-eZ-ZrI" firstAttribute="leading" secondItem="0eP-5l-WLI" secondAttribute="leading" constant="20" id="fvK-rK-awx"/>
+                        </constraints>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="LvM-eZ-ZrI"/>
+                                <include reference="dNQ-6f-cY6"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="0rD-RT-Rm5"/>
+                                <include reference="ZOd-Fn-RG8"/>
+                                <include reference="7xj-dD-tIj"/>
+                                <include reference="fvK-rK-awx"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="0eP-5l-WLI" secondAttribute="bottom" id="2bP-at-ML5"/>
+                    <constraint firstItem="0eP-5l-WLI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="VRS-Ka-BtX"/>
+                    <constraint firstItem="0eP-5l-WLI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="ZTP-Cm-1qt"/>
+                    <constraint firstAttribute="trailing" secondItem="0eP-5l-WLI" secondAttribute="trailingMargin" id="lt3-kG-zie"/>
+                </constraints>
+                <variation key="heightClass=regular-widthClass=compact">
+                    <mask key="subviews">
+                        <include reference="0eP-5l-WLI"/>
+                    </mask>
+                    <mask key="constraints">
+                        <include reference="2bP-at-ML5"/>
+                        <include reference="VRS-Ka-BtX"/>
+                        <include reference="ZTP-Cm-1qt"/>
+                        <include reference="lt3-kG-zie"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="labelCamID" destination="dNQ-6f-cY6" id="8B1-Cz-gmf"/>
+                <outlet property="labelCamStatus" destination="LvM-eZ-ZrI" id="DSJ-rL-Mp8"/>
+            </connections>
+            <point key="canvasLocation" x="169.5" y="239"/>
+        </tableViewCell>
+    </objects>
+</document>

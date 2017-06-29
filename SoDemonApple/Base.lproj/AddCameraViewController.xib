@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddCameraViewController">
+            <connections>
+                <outlet property="textFieldCamID" destination="xu7-OO-9bR" id="DQ0-6n-neO"/>
+                <outlet property="textFieldCamPwd" destination="jsh-M0-rLP" id="S63-3T-DW6"/>
+                <outlet property="textFieldCamUser" destination="5EG-mO-0U6" id="TM6-ef-KE9"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="UKn-Yh-4DP"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lZc-v2-iqP">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xA5-Q4-dR2" userLabel="View id">
+                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="*Camera ID:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pZf-GR-1wJ">
+                                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=" Input camera's ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xu7-OO-9bR">
+                                    <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="GKJ-Kb-QbH"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                    <variation key="heightClass=regular-widthClass=compact">
+                                        <mask key="constraints">
+                                            <include reference="GKJ-Kb-QbH"/>
+                                        </mask>
+                                    </variation>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="pow-X4-dsO"/>
+                                    </connections>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="xu7-OO-9bR" firstAttribute="centerY" secondItem="xA5-Q4-dR2" secondAttribute="centerY" id="HZU-5a-1FP"/>
+                                <constraint firstAttribute="trailing" secondItem="xu7-OO-9bR" secondAttribute="trailing" id="NnY-pk-tbr"/>
+                                <constraint firstItem="pZf-GR-1wJ" firstAttribute="centerY" secondItem="xA5-Q4-dR2" secondAttribute="centerY" id="QzF-K5-Ca4"/>
+                                <constraint firstAttribute="width" constant="300" id="RNf-nV-KdN"/>
+                                <constraint firstAttribute="height" constant="64" id="Xem-yh-HQZ"/>
+                                <constraint firstItem="pZf-GR-1wJ" firstAttribute="leading" secondItem="xA5-Q4-dR2" secondAttribute="leading" id="iZl-Sx-ggi"/>
+                                <constraint firstItem="xu7-OO-9bR" firstAttribute="leading" secondItem="pZf-GR-1wJ" secondAttribute="trailing" constant="5" id="pnH-Ho-xcp">
+                                    <variation key="heightClass=regular-widthClass=compact" constant="5"/>
+                                </constraint>
+                            </constraints>
+                            <variation key="heightClass=regular-widthClass=compact">
+                                <mask key="subviews">
+                                    <include reference="pZf-GR-1wJ"/>
+                                    <include reference="xu7-OO-9bR"/>
+                                </mask>
+                                <mask key="constraints">
+                                    <include reference="RNf-nV-KdN"/>
+                                    <include reference="Xem-yh-HQZ"/>
+                                    <include reference="HZU-5a-1FP"/>
+                                    <include reference="NnY-pk-tbr"/>
+                                    <include reference="pnH-Ho-xcp"/>
+                                    <include reference="QzF-K5-Ca4"/>
+                                    <include reference="iZl-Sx-ggi"/>
+                                </mask>
+                            </variation>
+                        </view>
+                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dbx-rn-9nD" userLabel="View alias">
+                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="*Camera user:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IwG-36-4A5">
+                                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=" Input camera's user" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5EG-mO-0U6" userLabel="text camera alias">
+                                    <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="Xih-dc-dHD"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                    <variation key="heightClass=regular-widthClass=compact">
+                                        <mask key="constraints">
+                                            <include reference="Xih-dc-dHD"/>
+                                        </mask>
+                                    </variation>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="mau-Fo-2Ba"/>
+                                    </connections>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="5EG-mO-0U6" firstAttribute="centerY" secondItem="IwG-36-4A5" secondAttribute="centerY" id="2tc-qQ-O2m"/>
+                                <constraint firstItem="IwG-36-4A5" firstAttribute="leading" secondItem="Dbx-rn-9nD" secondAttribute="leading" id="6pm-oq-g8N"/>
+                                <constraint firstItem="IwG-36-4A5" firstAttribute="centerY" secondItem="Dbx-rn-9nD" secondAttribute="centerY" id="OSh-ve-CWt"/>
+                                <constraint firstAttribute="width" constant="300" id="P0r-HY-Prj"/>
+                                <constraint firstItem="5EG-mO-0U6" firstAttribute="leading" secondItem="IwG-36-4A5" secondAttribute="trailing" constant="5" id="Uph-dL-GdE"/>
+                                <constraint firstAttribute="height" constant="64" id="gUN-6n-Xrr"/>
+                                <constraint firstAttribute="trailing" secondItem="5EG-mO-0U6" secondAttribute="trailing" id="rbn-AJ-ean"/>
+                            </constraints>
+                            <variation key="heightClass=regular-widthClass=compact">
+                                <mask key="subviews">
+                                    <include reference="IwG-36-4A5"/>
+                                    <include reference="5EG-mO-0U6"/>
+                                </mask>
+                                <mask key="constraints">
+                                    <include reference="P0r-HY-Prj"/>
+                                    <include reference="gUN-6n-Xrr"/>
+                                    <include reference="2tc-qQ-O2m"/>
+                                    <include reference="Uph-dL-GdE"/>
+                                    <include reference="rbn-AJ-ean"/>
+                                    <include reference="6pm-oq-g8N"/>
+                                    <include reference="OSh-ve-CWt"/>
+                                </mask>
+                            </variation>
+                        </view>
+                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yiB-ra-3nF" userLabel="View pwd">
+                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="*Password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uq0-k6-vNO">
+                                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=" Input camera's password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jsh-M0-rLP">
+                                    <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="bsn-93-a6m"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                                    <variation key="heightClass=regular-widthClass=compact">
+                                        <mask key="constraints">
+                                            <include reference="bsn-93-a6m"/>
+                                        </mask>
+                                    </variation>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="FNq-XG-43T"/>
+                                    </connections>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="jsh-M0-rLP" firstAttribute="leading" secondItem="uq0-k6-vNO" secondAttribute="trailing" constant="5" id="3rr-a5-Hsx"/>
+                                <constraint firstItem="uq0-k6-vNO" firstAttribute="leading" secondItem="yiB-ra-3nF" secondAttribute="leading" id="CNx-ea-nYL"/>
+                                <constraint firstAttribute="width" constant="300" id="FRF-Lz-ug4"/>
+                                <constraint firstAttribute="height" constant="64" id="PiZ-kK-on4"/>
+                                <constraint firstItem="jsh-M0-rLP" firstAttribute="centerY" secondItem="yiB-ra-3nF" secondAttribute="centerY" id="fy2-Lq-z4Q"/>
+                                <constraint firstAttribute="trailing" secondItem="jsh-M0-rLP" secondAttribute="trailing" id="lfD-kX-35Q"/>
+                                <constraint firstItem="uq0-k6-vNO" firstAttribute="centerY" secondItem="yiB-ra-3nF" secondAttribute="centerY" id="qli-9a-zfb"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="subviews">
+                                    <exclude reference="jsh-M0-rLP"/>
+                                </mask>
+                            </variation>
+                            <variation key="heightClass=regular-widthClass=compact">
+                                <mask key="subviews">
+                                    <include reference="uq0-k6-vNO"/>
+                                    <include reference="jsh-M0-rLP"/>
+                                </mask>
+                                <mask key="constraints">
+                                    <include reference="FRF-Lz-ug4"/>
+                                    <include reference="PiZ-kK-on4"/>
+                                    <include reference="3rr-a5-Hsx"/>
+                                    <include reference="fy2-Lq-z4Q"/>
+                                    <include reference="lfD-kX-35Q"/>
+                                    <include reference="CNx-ea-nYL"/>
+                                    <include reference="qli-9a-zfb"/>
+                                </mask>
+                            </variation>
+                        </view>
+                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1pg-Ix-CuE" userLabel="View sure">
+                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pkL-OP-aVs">
+                                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                    <color key="backgroundColor" red="0.1450980392" green="0.68235294120000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="iD9-bS-DRM"/>
+                                    </constraints>
+                                    <state key="normal" title="Save"/>
+                                    <variation key="heightClass=regular-widthClass=compact">
+                                        <mask key="constraints">
+                                            <include reference="iD9-bS-DRM"/>
+                                        </mask>
+                                    </variation>
+                                    <connections>
+                                        <action selector="buttonSaveAction:" destination="-1" eventType="touchUpInside" id="Kdr-Yv-SnJ"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="300" id="GbL-3e-3on"/>
+                                <constraint firstAttribute="height" constant="64" id="OR8-FH-UPz"/>
+                                <constraint firstItem="pkL-OP-aVs" firstAttribute="centerY" secondItem="1pg-Ix-CuE" secondAttribute="centerY" id="X5P-SZ-Ain"/>
+                                <constraint firstItem="pkL-OP-aVs" firstAttribute="leading" secondItem="1pg-Ix-CuE" secondAttribute="leading" id="n4N-C6-Aj1"/>
+                                <constraint firstAttribute="trailing" secondItem="pkL-OP-aVs" secondAttribute="trailing" id="rDx-gS-Nqv"/>
+                                <constraint firstItem="pkL-OP-aVs" firstAttribute="centerX" secondItem="1pg-Ix-CuE" secondAttribute="centerX" id="xH2-Zn-Mdc"/>
+                            </constraints>
+                            <variation key="heightClass=regular-widthClass=compact">
+                                <mask key="subviews">
+                                    <include reference="pkL-OP-aVs"/>
+                                </mask>
+                                <mask key="constraints">
+                                    <include reference="GbL-3e-3on"/>
+                                    <include reference="OR8-FH-UPz"/>
+                                    <include reference="X5P-SZ-Ain"/>
+                                    <include reference="n4N-C6-Aj1"/>
+                                    <include reference="rDx-gS-Nqv"/>
+                                    <include reference="xH2-Zn-Mdc"/>
+                                </mask>
+                            </variation>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="xA5-Q4-dR2" firstAttribute="top" secondItem="lZc-v2-iqP" secondAttribute="top" id="0uG-Ke-E3V"/>
+                        <constraint firstAttribute="height" constant="300" id="7rR-Tx-ptu"/>
+                        <constraint firstItem="xA5-Q4-dR2" firstAttribute="centerX" secondItem="lZc-v2-iqP" secondAttribute="centerX" id="9qh-rK-3Cm"/>
+                        <constraint firstItem="1pg-Ix-CuE" firstAttribute="centerX" secondItem="lZc-v2-iqP" secondAttribute="centerX" id="NUT-dd-j8L"/>
+                        <constraint firstItem="Dbx-rn-9nD" firstAttribute="centerX" secondItem="lZc-v2-iqP" secondAttribute="centerX" id="SUk-zg-0E4"/>
+                        <constraint firstItem="Dbx-rn-9nD" firstAttribute="top" secondItem="xA5-Q4-dR2" secondAttribute="bottom" id="WON-R7-zec"/>
+                        <constraint firstItem="yiB-ra-3nF" firstAttribute="centerX" secondItem="lZc-v2-iqP" secondAttribute="centerX" id="bR2-CJ-3pP"/>
+                        <constraint firstItem="1pg-Ix-CuE" firstAttribute="top" secondItem="yiB-ra-3nF" secondAttribute="bottom" constant="20" id="f4v-ph-jvd">
+                            <variation key="heightClass=regular-widthClass=compact" constant="20"/>
+                        </constraint>
+                        <constraint firstItem="yiB-ra-3nF" firstAttribute="top" secondItem="Dbx-rn-9nD" secondAttribute="bottom" id="gh8-Mz-wks"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="0uG-Ke-E3V"/>
+                            <exclude reference="SUk-zg-0E4"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="subviews">
+                            <include reference="xA5-Q4-dR2"/>
+                            <include reference="Dbx-rn-9nD"/>
+                            <include reference="yiB-ra-3nF"/>
+                            <include reference="1pg-Ix-CuE"/>
+                        </mask>
+                        <mask key="constraints">
+                            <include reference="7rR-Tx-ptu"/>
+                            <include reference="0uG-Ke-E3V"/>
+                            <include reference="9qh-rK-3Cm"/>
+                            <include reference="SUk-zg-0E4"/>
+                            <include reference="WON-R7-zec"/>
+                            <include reference="bR2-CJ-3pP"/>
+                            <include reference="gh8-Mz-wks"/>
+                            <include reference="NUT-dd-j8L"/>
+                            <include reference="f4v-ph-jvd"/>
+                        </mask>
+                    </variation>
+                </view>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ld1-1P-Re4">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <mutableString key="text">/*
+     *添加摄像机，最主要的是以下几个参数：
+     *摄像机id:真实id
+     *密码:密码
+     *用户名：用户名
+     *https：默认为NO
+     *其他可选：
+     *alias:摄像机本地别名
+     *sosocam_id:用到服务器添加才需要
+     *model:保留使用，直接写0
+     *master:保留使用，直接写NO
+     */
+    /*
+     *此处示范的方法添加的，添加后使用默认p2p连接，如果想要局域网连接,需要如果操作：
+     *1)把id和局域网内的摄像机一一对比.获取局域网内摄像机
+     [[IPCamMgr get_share]get_discovered_cameras_list]
+     *2)匹配到此摄像机后，更新此摄像机的局域网信息，这样就会使用局域网连接了.更新局域网信息使用IPCam方法
+     -(void)update_lan_status:(BOOL)in_lan
+     ip:(NSString *)ip
+     port:(int)port
+     https:(BOOL)https;
+     *
+     */
+</mutableString>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ld1-1P-Re4" secondAttribute="bottom" id="Edh-5T-YQD"/>
+                <constraint firstItem="lZc-v2-iqP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="Qqk-kz-ygU"/>
+                <constraint firstItem="ld1-1P-Re4" firstAttribute="top" secondItem="lZc-v2-iqP" secondAttribute="bottom" id="QzV-XB-nmc"/>
+                <constraint firstItem="lZc-v2-iqP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="84" id="eb6-jG-3K8"/>
+                <constraint firstAttribute="trailing" secondItem="lZc-v2-iqP" secondAttribute="trailing" constant="10" id="jhf-p0-wDL"/>
+                <constraint firstItem="ld1-1P-Re4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="o3h-XJ-IVB"/>
+                <constraint firstAttribute="trailing" secondItem="ld1-1P-Re4" secondAttribute="trailing" constant="10" id="sO1-0S-4zz"/>
+            </constraints>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="lZc-v2-iqP"/>
+                    <include reference="ld1-1P-Re4"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="Edh-5T-YQD"/>
+                    <include reference="QzV-XB-nmc"/>
+                    <include reference="o3h-XJ-IVB"/>
+                    <include reference="sO1-0S-4zz"/>
+                    <include reference="Qqk-kz-ygU"/>
+                    <include reference="eb6-jG-3K8"/>
+                    <include reference="jhf-p0-wDL"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

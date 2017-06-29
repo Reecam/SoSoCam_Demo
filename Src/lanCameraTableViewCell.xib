@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="lanCameraViewController"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="150" id="KGk-i7-Jjw" customClass="lanCameraTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="345" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.80000000000000004" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="345" height="149"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4St-xj-3Lx" userLabel="Labelname">
+                        <rect key="frame" x="8" y="18" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Op6-yu-Ltk" userLabel="LabelID">
+                        <rect key="frame" x="8" y="44" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BKP-PR-no9" userLabel="LabelIP">
+                        <rect key="frame" x="8" y="70" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2qc-XK-OsU" userLabel="LabelFireWare">
+                        <rect key="frame" x="8" y="96" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.85882352941176465" green="0.96078431372549022" blue="0.7803921568627451" alpha="1" colorSpace="deviceRGB"/>
+                <constraints>
+                    <constraint firstItem="4St-xj-3Lx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="7sl-wF-Zia"/>
+                    <constraint firstItem="4St-xj-3Lx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="7xH-jn-3M4"/>
+                    <constraint firstItem="2qc-XK-OsU" firstAttribute="top" secondItem="BKP-PR-no9" secondAttribute="bottom" constant="5" id="VCb-1M-md5"/>
+                    <constraint firstItem="BKP-PR-no9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="d9J-sR-Mch"/>
+                    <constraint firstItem="Op6-yu-Ltk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="eSf-gG-ZIb"/>
+                    <constraint firstItem="Op6-yu-Ltk" firstAttribute="top" secondItem="4St-xj-3Lx" secondAttribute="bottom" constant="5" id="hzJ-eW-e0N"/>
+                    <constraint firstItem="BKP-PR-no9" firstAttribute="top" secondItem="Op6-yu-Ltk" secondAttribute="bottom" constant="5" id="in5-P5-hWe"/>
+                    <constraint firstItem="2qc-XK-OsU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="oF8-3e-Pm8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="labelCameraAlias" destination="4St-xj-3Lx" id="wUz-xx-lC0"/>
+                <outlet property="labelCameraFirmWareVersion" destination="2qc-XK-OsU" id="m0N-Cs-kqj"/>
+                <outlet property="labelCameraID" destination="Op6-yu-Ltk" id="QLe-GJ-1Si"/>
+                <outlet property="labelCameraIP" destination="BKP-PR-no9" id="HTz-as-BpM"/>
+            </connections>
+            <point key="canvasLocation" x="337.5" y="227"/>
+        </tableViewCell>
+    </objects>
+</document>

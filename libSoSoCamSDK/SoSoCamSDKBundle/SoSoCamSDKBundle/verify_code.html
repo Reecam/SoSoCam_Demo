@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="initial-scale=1.0, minimum-scale=0.1, maximum-scale=2.0, user-scalable=yes">
+<style>
+body,img,div{padding:0px;margin:0px;border:0px;}
+</style>
+</head>
+<body>
+<script>
+function get_query(name){
+	var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+	var r = window.location.search.substr(1).match(reg);
+	return r != null?unescape(r[2]):'';
+}
+var url='https://webservices.sosocam.com/api/verifycode.php?_t='+Math.random();
+var sid=get_query('sid');
+if(sid!=null){
+	url+='&sid='+sid;
+}
+document.write('<img alt="verify_code" height="40" width="150" src="'+url+'" />');
+</script>
+</body>
+</html>
